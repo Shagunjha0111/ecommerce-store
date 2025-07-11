@@ -10,17 +10,20 @@ function App() {
   const [query, setQuery] = useState('');
 
   return (
-    <>
+    <div className="min-h-screen bg-gray-50 text-gray-800">
       <Navbar setQuery={setQuery} />
-      <Routes>
-        <Route path="/" element={<Home query={query} />} />
-        <Route path="/product/:id" element={<ProductPage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-      </Routes>
-    </>
+
+      {/* Main page content container */}
+      <main className="px-4 sm:px-6 py-6">
+        <Routes>
+          <Route path="/" element={<Home query={query} />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
 
 export default App;
-

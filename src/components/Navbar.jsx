@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import { useCart } from '../context/CartContext';
@@ -6,9 +7,9 @@ const Navbar = ({ setQuery }) => {
   const { cart } = useCart();
 
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-blue-600 text-white shadow-md w-full">
+    <nav className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0 px-4 py-3 bg-blue-600 text-white shadow-md w-full">
       {/* Logo */}
-      <Link to="/" className="flex items-center">
+      <Link to="/" className="flex items-center shrink-0">
         <img
           src="https://cdn-icons-png.flaticon.com/128/833/833314.png"
           alt="Logo"
@@ -16,15 +17,15 @@ const Navbar = ({ setQuery }) => {
         />
       </Link>
 
-      {/* Search bar in center */}
-      <div className="flex-1 mx-6">
+      {/* Search bar - grow to fit center */}
+      <div className="w-full sm:flex-1 sm:mx-6">
         <SearchBar setQuery={setQuery} />
       </div>
 
-      {/* Cart icon with item count */}
+      {/* Cart button */}
       <Link
         to="/cart"
-        className="relative bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold shadow hover:bg-blue-100 transition"
+        className="relative bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold shadow hover:bg-blue-100 transition shrink-0"
       >
         🛒 Cart
         {cart.length > 0 && (
