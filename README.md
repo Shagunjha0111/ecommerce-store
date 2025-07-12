@@ -1,12 +1,104 @@
-# React + Vite
+# 🛍️ ShagunCart - E-commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive e-commerce web application inspired by Flipkart. Built using **React**, **Tailwind CSS**, and **Vite**, this project includes core shopping functionality with dynamic product pages, cart management, and a user-friendly interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+🚀 Check it out here:  
+🔗 [https://shopcomrc.netlify.app/](https://shopcomrc.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- 🛒 Add to Cart with quantity controls
+- ✅ Toast notifications on actions
+- 🔍 Product Search
+- 🧾 Checkout page with summary
+- 📱 Responsive Design (mobile-friendly)
+- 🎨 Styled with Tailwind CSS
+- 🖼️ Product images with colored card backgrounds
+- 🔄 Navigation with React Router
+
+---
+
+## 🧑‍💻 Tech Stack
+
+| Tech              | Description                     |
+|-------------------|---------------------------------|
+| React             | Frontend UI Framework           |
+| Tailwind CSS      | Utility-first CSS Styling       |
+| Vite              | Lightning-fast build tool       |
+| React Router DOM  | Client-side Routing             |
+| React Hot Toast   | Notifications                   |
+| Netlify           | Deployment                      |
+| Git & GitHub      | Version Control & Hosting       |
+
+---
+
+## 📁 Folder Structure
+
+src/
+├── components/ # Navbar, SearchBar, ProductList
+├── context/ # CartContext
+├── data/ # Product data
+├── pages/ # Home, ProductPage, CartPage, CheckoutPage
+├── App.jsx # App routes and layout
+├── index.css # Tailwind base styles
+└── main.jsx # App entry point
+
+
+---
+
+## 🛠️ Getting Started Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/shagunjha0111/ecommerce-store.git
+cd ecommerce-store
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+🔮 Future Enhancements
+🔐 User Authentication
+
+❤️ Wishlist functionality
+
+📦 Order History
+
+📊 Admin Dashboard
+
+🌙 Light/Dark Mode Toggle
+
+🧠 AI-based Product Recommendations
+
+🧾 Invoice PDF generation
+
+💬 Live Chat Support
+
+🙌 Acknowledgements
+Icons by Flaticon
+
+Toasts by React Hot Toast
+
+UI inspired by Flipkart
+
+👩🏻‍💻 Author
+Shagun Jha
+📧 jhashagun534@gmail.com
+
+⭐️ Support
+If you like this project:
+
+⭐️ Star it on GitHub
+
+🍴 Fork it and improve upon it
+
+
+
