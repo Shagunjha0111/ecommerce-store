@@ -54,7 +54,7 @@ src/
 
 ## 🛠️ Getting Started Locally
 
-```bash
+
 # Clone the repository
 git clone https://github.com/shagunjha0111/ecommerce-store.git
 cd ecommerce-store
