@@ -1,5 +1,7 @@
 
+
 import { useCart } from '../context/CartContext';
+import toast from 'react-hot-toast'; // ✅ Import toast
 
 const cardColors = [
   'bg-pink-100',
@@ -12,6 +14,11 @@ const cardColors = [
 
 const ProductList = ({ products }) => {
   const { addToCart } = useCart();
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    toast.success('Added to cart!');
+  };
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -35,7 +42,7 @@ const ProductList = ({ products }) => {
           <p className="text-gray-800 mb-4 font-medium">₹{product.price}</p>
 
           <button
-            onClick={() => addToCart(product)}
+            onClick={() => handleAddToCart(product)}
             className="mt-auto bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
           >
             Add to Cart
