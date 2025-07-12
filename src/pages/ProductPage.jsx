@@ -11,14 +11,18 @@ const ProductPage = () => {
 
   return (
     <div className="p-4 max-w-4xl mx-auto flex flex-col sm:flex-row gap-6 items-start">
+      {/* Product Image */}
       <img
         src={product.image}
         alt={product.name}
         className="w-full sm:w-1/2 max-h-[400px] object-cover rounded shadow"
       />
 
-      <div className="flex-1">
-        <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
+      {/* Product Details */}
+      <div className="flex-1 min-w-0">
+        <h1 className="text-2xl font-bold mb-2 break-words whitespace-normal sm:whitespace-nowrap sm:truncate">
+          {product.name}
+        </h1>
         <p className="text-xl text-gray-700 mb-4">₹{product.price}</p>
 
         <button
@@ -33,3 +37,4 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
+

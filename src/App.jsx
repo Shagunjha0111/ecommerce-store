@@ -13,6 +13,8 @@ function App() {
     <div className="min-h-screen bg-gray-50 text-gray-800">
       <Navbar setQuery={setQuery} />
 
+     
+
       {/* Main page content container */}
       <main className="px-4 sm:px-6 py-6">
         <Routes>
